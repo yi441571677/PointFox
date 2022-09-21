@@ -12,44 +12,46 @@
         <router-view></router-view>
       </el-main>
       <el-footer>
-        <Footer/>
+        <Footer />
       </el-footer>
     </el-container>
-    
   </div>
 </template>
 
 <script>
 //1、导入vue子组件
 import Header from "./components/Header.vue";
-// import Main from "./components/Main.vue";
+import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import Student from "./components/Student.vue";
 import Book from "./components/Book.vue";
 import Work from "./components/Work.vue";
-import CNNode from './components/CNNode.vue'
+import CNNode from "./components/CNNode.vue";
 
 //2、注册vue子组件，components
 export default {
   name: "App",
   components: {
     Header,
-    // Main,
+    Main,
     Student,
     Book,
     Footer,
     Work,
-    CNNode
+    CNNode,
   },
 };
 </script>
 
+ <!-- app主页面的css样式 -->
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+
 #app {
+  
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,7 +59,10 @@ export default {
   color: #2c3e50;
   /* margin-top: 60px; */
 }
-.el-header{
-  background-color: #244152;
+.el-header {
+  background-color: #134b6c;
+}
+.el-main {
+  height: 500px;
 }
 </style>

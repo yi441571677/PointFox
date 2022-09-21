@@ -1,33 +1,29 @@
 <template>
-<div>
- <el-steps :active="active" finish-status="success">
-  <el-step title="步骤 1"></el-step>
-  <el-step title="步骤 2"></el-step>
-  <el-step title="步骤 3"></el-step>
-</el-steps>
-
-<el-button style="margin-top: 12px;" @click="next">下一步</el-button>
-</div>
+  <el-row class="row">
+    <div class="button">
+      <router-link to="/student"
+        ><el-button type="danger" round>Student information</el-button></router-link
+      >
+      <router-link to="/book"
+        ><el-button type="warning" round>Book information</el-button></router-link
+      >
+      <router-link to="/cnnode"
+        ><el-button type="info" round>cnnode Forum</el-button></router-link
+      >
+    </div>
+  </el-row>
 </template>
 
 <script>
-export default {
-
-    data() {
-      return {
-        active: 0
-      };
-    },
-
-    methods: {
-      next() {
-        if (this.active++ > 2) this.active = 0;
-      }
-    }
-
-}
 </script>
 
-<style >
-
+<style>
+.row {
+  height: 100%;
+  text-align: center;
+}
+.button {
+  height: 100%;
+  line-height: 460px;
+}
 </style>

@@ -8,19 +8,19 @@
      <div id="headerFunction">
               <el-row>
               <router-link to="/main">
-              <el-button type="primary" disable>系统登入</el-button>
+              <el-button type="primary" disable>Syetem login</el-button>
               </router-link>
               <router-link to="/work">
-              <el-button type="primary" disable>工作中心</el-button>
+              <el-button type="success" disable>Work centre</el-button>
               </router-link>
               <router-link to="/student">
-              <el-button type="danger" disable>学生信息查询</el-button>
+              <el-button type="danger" disable>Student information</el-button>
               </router-link>
               <router-link to="/book">
-              <el-button type="primary" disable>图书信息查询</el-button>
+              <el-button type="warning" disable>Book information</el-button>
               </router-link>
               <router-link to="/cnnode">
-              <el-button type="primary" disable>cnnode论坛</el-button>
+              <el-button type="info" disable>cnnode Forum</el-button>
               </router-link>
               </el-row>
      </div>
@@ -32,18 +32,14 @@ export default {
     name:"headerBook",
     data(){
         return {
-            message:"江西软件大学-新型图书管理系统"
+            message:"Jiangxi University of Software-Library management system"
         }
     }
 }
 </script>
 
 <style>
-/* #headerBook{
-    background-color: red; 
-} */
-#headerTitle{
-    /* background-color: blue; */
+#headerTitle{ 
     width: 400px;
     height: 60px;
     color:white;
@@ -55,9 +51,7 @@ export default {
  #headerFunction{
             float: right;
             display: inline-block;
-            /* width: 200px; */
             line-height: 60px;
-            /* background-color: green; */
         }
  #headerFunction > .el-button {
             display: inline-block;
